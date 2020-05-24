@@ -264,7 +264,7 @@ end
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 
 clusteringpath_full = fullfile(basepath,clusteringpath);
-saveAsFullfile = fullfile(clusteringpath_full,[basename,'.',parameters.saveAs,'.cellinfo.mat']);
+saveAsFullfile = fullfile(basepath,[basename,'.',parameters.saveAs,'.cellinfo.mat']);
 
 if exist(saveAsFullfile,'file')
     dispLog(['Loading existing metrics: ' saveAsFullfile])

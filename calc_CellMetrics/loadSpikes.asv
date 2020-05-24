@@ -376,7 +376,7 @@ if forceReload
     % Saving output to a buzcode compatible spikes file.
     if saveMat
         disp('loadSpikes: Saving spikes')
-        try save(fullfile(basepath, [basename,'.spikes.cellinfo.mat']),'spikes')
+        try save(fullfile(clusteringpath_full,[basename,'.spikes.cellinfo.mat']),'spikes')
         catch
             warning('Spikes could not be saved')
         end
